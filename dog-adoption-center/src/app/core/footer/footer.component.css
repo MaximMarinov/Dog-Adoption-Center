@@ -1,0 +1,41 @@
+.footer-top {
+    background-color: white;
+    padding-top: 80px;
+    padding-bottom: 30px;
+ }
+ 
+ .footer-bottom {
+     background-color: #2E8B57;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+ }
+ 
+ footer .footer-links a,
+ footer .social-icons a {
+    color: #2E8B57;
+ }
+ 
+ footer .social-icons a {
+    font-size: 24px;
+    padding: 10px;
+ }
+ 
+ footer .footer-links a {
+    display: block;
+    font-weight: 400;
+ }
+ 
+ footer .social-icons a:hover,
+ footer .footer-links a:hover {
+    color: #318CE7;
+ }
+
+ a {
+    color: #2E8B57;
+    text-decoration: none;
+ }
+
+ .copyright {
+     color: white;
+ }
