@@ -1,0 +1,33 @@
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 section-intro">
+                <h1>Breeds</h1>
+                <div class="hline"></div>
+            </div>
+        </div>
+        <div class="row">
+            <ng-container *ngFor="let breed of breeds">
+                <div class="col-lg-3 col-sm-6 p-4 service">
+                    <div class="box" (click)="openBreedDetails(breed.id)">
+                        <div class="breed-thumb-container">
+                            <img 
+                                *ngIf="breed.image"
+                                src="{{breed.image.url}}" 
+                                alt="thumbnail"
+                                class="breed-thumbnail"
+                                >
+                            <p *ngIf="!breed.image">No image</p>
+                        </div>
+                        <div class="breed-description">
+                            <h6 class="breed-name text-white">{{breed.name}}</h6>
+                            <p class="bred_for text-white">{{breed.bred_for}}</p>
+                            <p class="breed_group text-white">{{breed.breed_group}}</p>
+                        </div>
+                    </div>
+                </div>
+            </ng-container>
+            
+        </div>
+    </div>
+</section>

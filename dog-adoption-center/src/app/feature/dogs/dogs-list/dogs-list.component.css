@@ -1,0 +1,86 @@
+.section-intro {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-intro .hline {
+    width: 90px;
+    height: 2px;
+    background-color: #318CE7;
+    margin: 16px auto 0 auto;
+}
+
+.title-sm {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    background-color: #318CE7;
+    color: white;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+
+div.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+div.box {
+    padding: 10px;
+    width: 300px;
+    margin: 10px;
+    height: 330px;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #2E8B57;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    padding: 0;
+}
+
+.box:hover {
+    box-shadow: 4px 3px 8px 0px rgba(0, 0, 0, 0.304);
+    transform: translateY(-3px);
+}
+
+.breed-thumb-container {
+    position: relative;
+    height: 200px;
+}
+
+.breed-thumb-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 200px;
+}
+
+.breed-description {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 157px;
+}
+
+.breed-name {
+    font-size: small;
+}
+
+.bred_for {
+    font-style: italic;
+    margin-bottom: 2px;
+    line-height: 1.2;
+}
