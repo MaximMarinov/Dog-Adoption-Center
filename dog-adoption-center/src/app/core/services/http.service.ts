@@ -14,4 +14,8 @@ export class HttpService {
   getBreedsList(): Observable<Array<Breed>> {
     return this.http.get<Array<Breed>>(`${environment.BASE_URL}/breeds`);
   }
+
+  getBreedDetails(id: string): Observable<Breed> {
+    return this.http.get<Breed>(`${environment.BASE_URL}/breeds/${id}`);
+  }
 }

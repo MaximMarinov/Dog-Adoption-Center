@@ -1,1 +1,125 @@
-<p>details works!</p>
+<div class="container mt-5 mb-5">
+    <div class="card">
+        <div class="row">
+            <div class="col-md-6 border-end">
+                <div class="d-flex flex-column justify-content-center">
+                    <div class="main_image">
+                        <img src="https://cdn2.thedogapi.com/images/{{breed.reference_image_id}}.jpg" id="main_product_image" width="350">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="p-3 right-side">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h3>{{breed.name}}</h3>
+                    </div>
+                    <div class="mt-2 pr-3 content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-4">
+                          <div class="list-group" id="list-tab" role="tablist">
+                            <a 
+                                class="list-group-item list-group-item-action active" 
+                                id="list-weight-list" 
+                                data-toggle="list" 
+                                href="#list-weight" 
+                                role="tab" 
+                                aria-controls="weight" 
+                                *ngIf="breed.weight">Weight</a>
+
+                            <a class="list-group-item list-group-item-action"
+                                id="list-height-list"
+                                data-toggle="list"
+                                href="#list-height"
+                                role="tab" 
+                                aria-controls="height" 
+                                *ngIf="breed.height">Height</a>
+
+                            <a class="list-group-item list-group-item-action" 
+                                id="list-bred_for-list" 
+                                data-toggle="list" 
+                                href="#list-bred_for" 
+                                role="tab" 
+                                aria-controls="messages"
+                                *ngIf="breed.bred_for">Bred For</a>
+
+                            <a class="list-group-item list-group-item-action" 
+                                id="list-breed_group-list" 
+                                data-toggle="list" 
+                                href="#list-breed_group" 
+                                role="tab" 
+                                aria-controls="breed_group"
+                                *ngIf="breed.breed_group">Breed Group</a>
+
+                            <a class="list-group-item list-group-item-action" 
+                                id="list-life_span-list" 
+                                data-toggle="list" 
+                                href="#list-life_span" 
+                                role="tab" 
+                                aria-controls="life_span"
+                                *ngIf="breed.life_span">Life Span</a>
+
+                            <a class="list-group-item list-group-item-action" 
+                                id="list-temperament-list" 
+                                data-toggle="list" 
+                                href="#list-temperament" 
+                                role="tab" 
+                                aria-controls="temperament"
+                                *ngIf="breed.temperament">Temperament</a>
+
+                            <a class="list-group-item list-group-item-action" 
+                                id="list-origin-list" 
+                                data-toggle="list" 
+                                href="#list-origin" 
+                                role="tab" 
+                                aria-controls="origin"
+                                *ngIf="breed.origin">Origin</a>
+
+                          </div>
+                        </div>
+                        <div class="col-8">
+                          <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="list-weight" role="tabpanel" aria-labelledby="list-weight-list">
+                                <h6>Weight</h6>
+                                <p>Imperial: {{breed.weight.imperial}}</p>
+                                <p>Metric: {{breed.weight.metric}}</p>
+                            </div>
+                            <div class="tab-pane fade" id="list-height" role="tabpanel" aria-labelledby="list-height-list">
+                                <h6>Height</h6>
+                                <p>Imperial: {{breed.height.imperial}}</p>
+                                <p>Metric: {{breed.height.metric}}</p>
+                            </div>
+                            <div class="tab-pane fade" id="list-bred_for" role="tabpanel" aria-labelledby="list-bred_for-list">
+                                <h6>Bred For</h6>
+                                <p>{{breed.bred_for}}</p>
+                            </div>
+                            <div class="tab-pane fade" id="list-breed_group" role="tabpanel" aria-labelledby="list-breed_group-list">
+                                <h6>Breed Group</h6>
+                                <p>{{breed.breed_group}}</p>
+                            </div>
+                            <div class="tab-pane fade" id="list-life_span" role="tabpanel" aria-labelledby="list-life_span-list">
+                                <h6>Life Span</h6>
+                                <p>{{breed.life_span}}</p>
+                            </div>
+                            <div class="tab-pane fade" id="list-temperament" role="tabpanel" aria-labelledby="list-temperament-list">
+                                <h6>Temperament</h6>
+                                <p>{{breed.temperament}}</p>
+                            </div>
+                            <div class="tab-pane fade" id="list-origin" role="tabpanel" aria-labelledby="list-origin-list">
+                                <h6>Origin</h6>
+                                <p>{{breed.origin}}</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="buttons d-flex flex-row mt-5 gap-3">
+                        <button class="btn btn-brand">Adopt</button>
+                    </div>
+                </div>	
+            </div>	
+        </div>	
+    </div>
+</div>

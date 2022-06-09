@@ -14,7 +14,7 @@
                             <img 
                                 *ngIf="breed.image"
                                 src="{{breed.image.url}}" 
-                                alt="thumbnail"
+                                alt="{{breed.name}}"
                                 class="breed-thumbnail"
                                 >
                             <p *ngIf="!breed.image">No image</p>
