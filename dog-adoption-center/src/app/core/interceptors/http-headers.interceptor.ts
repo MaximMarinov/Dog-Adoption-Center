@@ -14,9 +14,9 @@ export class HttpHeadersInterceptor implements HttpInterceptor {
 
   intercept(request: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<any>> {
     request = request.clone({
-      setHeaders: {
-        'x-api-key': '1765ae35-d08c-4c0a-87bc-651de7b1e7cb',
-      }
+      // setHeaders: {
+      //   'x-api-key': '1765ae35-d08c-4c0a-87bc-651de7b1e7cb',
+      // }
     });
     return next.handle(request);
   }
