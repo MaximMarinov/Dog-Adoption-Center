@@ -5,10 +5,12 @@ const cors = require('./src/middlewares/cors');
 const auth = require('./src/middlewares/auth');
 const usersController = require('./src/controllers/users');
 
+require('dotenv').config();
+
 
 async function start() {
     try {
-        const db = await mongoose.connect('mongodb://localhost:27017/dog-adoption-center');
+        const db = await mongoose.connect('mongodb+srv://max:stratos5566@dog-adoption-center.p1wwvve.mongodb.net/?retryWrites=true&w=majority');
 
         console.log('DB Ready');
     } catch (err) {
@@ -25,8 +27,7 @@ async function start() {
 
     app.use('/users', usersController);
 
-    app.listen(3030, () => console.log('REST Service started on port 3030'));
+    app.listen(process.env.PORT || 3030, () => console.log('REST Service started on port 3030'));
 }
-
 
 start();
