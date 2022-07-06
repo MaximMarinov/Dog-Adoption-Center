@@ -1,7 +1,7 @@
 # IN DEVELOPMENT
 
 # Dog Adoption Center
-Angular web application styled with Bootstrap, authenticated with Auth0 and using The Dog API's data (https://thedogapi.com/).
+Angular web application styled with Bootstrap, authenticated with custom REST API and using The Dog API's data (https://thedogapi.com/).
 
 # Live Version
 https://dog-adoption-center-maksim-marinov.netlify.app/
